@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <H2>Expense Tracker</H2>
+    </nav>
+
+    <div class="container">
+<h2 class="bal">Your Balance</h2>
+<span class="main">$<h1 id="main">1000.00</h1></span>
+
+<div class="incExp">
+<div class="inc">
+    <h3>Income</h3>
+<span class="incm">$<h2 id="inc">1500.00</h2> </span>
+</div>
+<div class="exp">
+    <h3>Expense</h3>
+    <span class="exps">$<h2 id="exp">500.00</h2>  </span>
+</div>
+</div>
+
+<div id="history">
+    <h2>History</h2>
+    <div class="hisCol">
+        <h3 class="hisName">courses(default)</h3>
+        <h3 class="hisAmt">+1000</h3>
+    </div>
+<div class="hisCol hisBrdRed">
+    <h3 class="hisName">pdfs(default)</h3>
+    <h3 class="hisAmt">-500</h3>
+</div>
+</div>
+
+<div class="adding">
+    <h2>Add Your Transaction</h2>
+<label for="name">Name</label>
+<input type="text" name="name" id="name" placeholder="Enter name of Transaction....">
+<label for="Amount">Amount</label>
+<input type="number" name="Amount" id="amt" placeholder="Enter Amount....">
+<p id="p"></p>
+
+<button type="submit" id="btn">Add Transaction</button>
+</div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
